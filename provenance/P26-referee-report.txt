@@ -1,0 +1,111 @@
+P26 v1, “Universal spectra of self-dual simple fusion objects”
+
+Verdict: correct.
+
+I checked the submitted mathematical statements and every proof, including the quantitative supporting proposition, against the supplied source. I found no mathematical error and no unresolved proof gap. The results hold with the hypotheses as stated. This report makes no assessment of importance or novelty.
+
+The reviewed paper.tex has SHA256 bfd24de99e1b80ab34446f52a0b153b18b6917714f97bc9bfe552e8fd3a53447. I cloned /home/agents/worlds/mtc/repos/universal-simple-fusion-spectra.git at commit cdd06bf170bd229e417092aa76d4c74bf0d086c8. Its paper/paper.tex is byte-identical to the submitted source.
+
+1. Proposition 2.1: cyclic simple lift (paper.tex, lines 105–182).
+
+The coordinate rotations are group automorphisms, so they define the stated coherent unitary tensor action on the untwisted graded category. Equivariant finite-dimensional Hilbert spaces form a unitary fusion category; the underlying dimension is additive, multiplicative and positive on simples, and hence is the Frobenius–Perron dimension.
+
+I checked the dimension formula independently from the orbit classification. An orbit of length m has inertia group of order d/m. In this strict action the inertia cocycle on a homogeneous line is trivial. The d/m characters give d/m simples of dimension m, whose squared dimensions sum to dm. Summing over the orbits gives d|G|^d. This argument also covers composite d and nonfree orbits elsewhere in the category.
+
+Distinctness of the s_i makes the chosen tuple's cyclic orbit free. The displayed equivariance maps preserve grades and satisfy the group equation. A graded endomorphism is diagonal; the transitive action forces a scalar. Thus the selected object really is simple, of dimension d.
+
+I checked both duality identities on the displayed basis. Since every orbit grade squares to the identity, evaluation and coevaluation are graded maps. Simultaneous rotation preserves their coefficients, and contraction gives the identity in both orders. The bilinear form is symmetric in the underlying Hilbert space, exactly as claimed; no braiding is needed.
+
+Projection G^d → G is a group homomorphism, so push-forward of grading is a tensor functor. On the free orbit each s_i occurs once in the first coordinate. For every g≠1 the separate free orbit of (g,1,…,1) has image g+(d−1)1. Subtracting (d−1) times the unit supplies every integral group-ring basis element. This proves integral surjectivity, and the actual summands prove dominance.
+
+The Grothendieck map intertwines regular left multiplication with L_a. Its kernel is invariant and its quotient is the free abelian group Z[G]; choosing lifts of a basis of the quotient gives an integral block triangular matrix. The characteristic-polynomial divisibility, including multiplicities, follows in Z[t].
+
+Finally, the relevant crossed product has simple labels (g,r) and multiplication (g,r)(h,s)=(g σ_r(h),r+s). Its associator is untwisted here, so it is Vec_{G^d ⋊ C_d}. The cited Morita statement therefore proves group-theoreticality. No generation assumption on the s_i is used or needed.
+
+2. Theorem 1.2: graph transfer and size bounds (lines 64–81 and 186–226).
+
+I checked the deficit construction vertex by vertex. Each copied original vertex has degree deg(v)+(d−deg(v))=d; each deficit vertex has its d different neighbors. There are δ=dn−2e deficit vertices and M=dn+δ=2dn−2e vertices in total. The graph remains simple and undirected.
+
+The signed two-copy embedding is injective because d≥2. Multiplication by A_Y sends (0,x,−x,0,…) to (0,A_Γx,−A_Γx,0,…), since every deficit contribution cancels. This transfers the full characteristic polynomial. The construction also handles edgeless graphs, isolated vertices, disconnected graphs, and δ=0.
+
+The bipartite double has 2M vertices and degree d. For a set S on either side, counting its d|S| incident edges gives |N(S)|≥|S|. Hall's theorem gives a perfect matching; removing it leaves a regular bipartite graph of degree d−1. Iteration gives d edge-disjoint perfect matchings. Each produces a fixed-point-free involution, the involutions are distinct, and their matrices sum to B.
+
+For the full group S_N, the sums of elements in the left cosets of a point stabilizer are linearly independent and are carried into one another by left multiplication according to the natural permutation action. Thus this is an actual invariant N-dimensional submodule, retaining characteristic-polynomial multiplicities. The rational embeddings between the integral matrices give polynomial divisibility over Q; monicity gives divisibility over Z. Applying Proposition 2.1 completes the transfer.
+
+I recalculated N=2M=4dn−4e, FPdim(C)=d(N!)^d, rank(C)≤FPdim(C), and N≤4dn. All displayed bounds follow. The use of the full symmetric group is legitimate even when the matchings generate a proper subgroup.
+
+3. Theorem 1.1 and Remark 3.1 (lines 228–247).
+
+Salez's Theorem 1 supplies a finite tree for every totally real algebraic integer, with no scaling. The graph theorem then applies, including at eigenvalue zero.
+
+For the converse I checked the noncommutative left-multiplication convention: rigidity gives
+dim Hom(k,X⊗j)=dim Hom(X*⊗k,j), hence N_X^T=N_{X*}.
+For self-dual X the matrix is symmetric integral. The minimal polynomial of any eigenvalue divides its real-rooted monic integral characteristic polynomial. Thus the eigenvalue is an algebraic integer and all its conjugates are real.
+
+The multiplicity remark is also correct. The complexified fusion ring is a finite-dimensional semisimple *-algebra. On End(V), left multiplication acts separately on dim(V) columns, so each eigenvalue is repeated dim(V) times. An eigenvalue of multiplicity one in the regular action must therefore occur in a one-dimensional representation. ENO applies to that representation. The paper accurately identifies this as the argument in the proof of the CMS lemma, rather than asserting the lemma's literal principal-graph statement for arbitrary fusion matrices.
+
+4. Dimension-three example and Corollary 4.1 (lines 251–317).
+
+I verified the dihedral group law, the three distinct involutions, and the displayed two-dimensional representation. Expanding (1+ζ+ζ^3)(1+ζ^−1+ζ^−3) gives the three pairs with exponents 1,2,3 and hence (7+√5)/2.
+
+Writing F=Q(√5) and y=(7+√5)/2, one has N_{F/Q}(y)=11. A square in F has square rational norm, so y is not a square. Since Q(y)=F, adjoining √y has degree four over Q and t^4−7t^2+11 is irreducible.
+
+I checked the non-Galois argument separately. If Q(√y) contained √11, it would equal the biquadratic field F(√11). Squaring an expression A+B√11 for √y forces AB=0. The two possibilities would make y or y/11 a square in F; their norms 11 and 1/11 exclude this. Therefore the conjugate √11/√y is absent. A subfield of a finite abelian Galois extension is Galois, so this eigenvalue cannot be cyclotomic. Its occurrence forces the splitting field of the fusion matrix's minimal polynomial to be nonabelian. This is the counterexample to the precise LPR extension being asked about.
+
+The exact characteristic polynomial of the 20-dimensional regular group matrix agrees with the paper:
+(t^2−9)(t^2−1)(t^4−7t^2+11)^2(t^4−3t^2+1)^2.
+The simple counts give 60 objects of dimension one and 2660 of dimension three, rank 2720 and global dimension 24000.
+
+For the lower bound, the positive Frobenius–Perron dimension vector bounds the absolute values of all eigenvalues of N_X by FPdim(X). Consequently every conjugate of an eigenvalue β lies in [−2,2] when FPdim(X)≤2. A root z of z^2−βz+1 is integral by transitivity of integrality, and every embedding sends it to a root of the corresponding quadratic with real middle coefficient in [−2,2]. All such roots have modulus one, including the endpoints. Kronecker's theorem applies and β=z+z^−1 is cyclotomic. Simplicity and integrality are not needed in this lower-bound argument. The stated sharp integer minimum of three follows with exactly the restrictions in the corollary.
+
+5. Proposition 5.1: coefficient-input bounds (lines 326–406).
+
+I checked this proof independently, including each denominator and power of two. The real embeddings give Q=V^T V with an invertible Vandermonde matrix, so Q is positive definite. Traces of powers are integral and QM=M^TQ. Cauchy's bound gives |σ(α)|≤R, so |Q_ij|≤rR^{2r−2}=L. The determinant expansion bounds every leading minor by i!L^i; positivity makes these minors positive integers. Thus P and ℓ=P^5 obey the stated estimate.
+
+The minor formula for an entry in column j of L_0 has denominator Δ_j. The reduced denominator of D_i=Δ_i/Δ_{i−1} divides Δ_{i−1}. Both therefore divide P. Four squares for a_i b_i give a rational vector of squared norm a_i/b_i with denominator dividing P. Disjoint row blocks give B_0^T B_0=D, and B=B_0 L_0^T gives B^T B=Q.
+
+The matrix M Q^−1 is symmetric, proving A=A^T. Multiplication gives AB=BM. On im(B), A is similar to multiplication by α; on its orthogonal complement it is zero. There are exactly 3r additional zero eigenvalues. B has denominator dividing P^2 and Q^−1 denominator dividing P, so A has denominator dividing P^5. This proves that W=ℓA is integral. Symmetry and the spectrum bound give its operator norm and each absolute entry at most κ.
+
+For each block operation I checked both invariant subspaces. The sign-removal step retains W on the anti-diagonal subspace. The diagonal-removal and support-reduction steps retain the predecessor on the diagonal subspace. They preserve symmetry and nonnegativity, and after diagonal removal the diagonal stays zero. If the maximum entry is k>1, support subtraction and doubling reduce it to k−1; therefore at most κ−1 reductions suffice. Row sums after the first step are the absolute row sums of W, at most 4rκ, and subsequent operations duplicate that list. The final size is at most
+4r·2·2·2^{κ−1}=2^{κ+3}r.
+The zero-matrix case needs no reductions and also satisfies the bound.
+
+Applying Theorem 1.2 gives d≤4rκ and
+N≤4dn_Γ≤2^{κ+7}r^2κ=U.
+Monotonicity of the factorial and these integer exponents gives the displayed global-dimension bound. The proposition realizes ℓα, as explicitly stated; no unscaled coefficient bound is inferred.
+
+6. Source audit.
+
+I read the relevant results in all eight cited works and checked their hypotheses against their uses:
+
+- [ENO, published primary PDF](https://annals.math.princeton.edu/wp-content/uploads/annals-v162-n2-p01.pdf): Theorem 8.51 and Corollary 8.53, including their proofs, pp. 631–632. They establish the character-trace and representation-model assertions used here. I also checked the positive dimension-function facts in §8.1.
+- [Burciu–Natale, arXiv v2](https://arxiv.org/pdf/1206.6625v2): Proposition 2.6, Theorem 2.12 and Corollary 2.13, including the orbit/inertia dimension formula and the tensor-autoequivalence hypothesis. The paper uses the corrected edition, and its strict action satisfies the hypothesis.
+- [Witherspoon, arXiv primary manuscript](https://arxiv.org/pdf/math/0212003): the orbit-sum calculation in the proof of Theorem 4.8. With trivial twisting and the given action, it yields exactly the underlying orbit sum used before projection of grading.
+- [Mombelli–Natale, cited 2017 author manuscript](https://www.famaf.unc.edu.ar/~mombelli/papers/modcat-monads-rev.pdf): Example 7.5 and Remark 7.6. These explicitly supply the crossed-product Morita equivalence and the group-theoretical conclusion for equivariantizations of pointed fusion categories.
+- [Godsil, transcription of the primary article](https://www.academia.edu/99570538/Eigenvalues_of_graphs_and_digraphs): Theorem 2.1, Theorem 2.3, Lemma 2.4 and the bipartite-factorization argument in Theorem 3.3. The publisher PDF was inaccessible; I checked the transcription and independently rederived every required regularization, block operation and multiplicity-preserving embedding. No proof step depends on an unread block-matrix image.
+- [Salez, arXiv v2](https://arxiv.org/pdf/1302.4423v2): Theorem 1 and the complete proof. The finite-tree assertion has precisely the required unrestricted totally real algebraic-integer scope.
+- [Calegari–Morrison–Snyder, author-hosted published text](https://www.math.uchicago.edu/~fcale/papers/cyclotomic.pdf): Example 2.0.4 and the proof of Lemma 3.0.7. Their respective uses in the corollary and multiplicity remark are accurate.
+- [Liu–Palcoux–Ren, published primary text](https://bimsa.net/doc/publication/531.pdf): §2.4, Theorem 2.11 and Question 2.12. The example addresses the actual proposed extension of the commutative criterion.
+
+I also checked the elementary applications of Hall's theorem, Cauchy's root bound, and Kronecker's theorem directly. The needed four-square assertion was checked in [Watase's formalized proof](https://fm.mizar.org/2014-22/pdf22-2/lagra4sq.pdf).
+
+7. Supplement reproduction and independent computations.
+
+The supplied command python checks/checks.py completes successfully, and its entire output matches checks/check-output.txt. Every entry in the root SHA256SUMS manifest verifies. I read the computation code as well as running it. It checks the claimed paw example and its discriminant, regularization and matching involutions, the dihedral characteristic polynomial and category counts, the rational trace-Gram example, and the small block-operation example.
+
+I wrote separate standard-library exact-arithmetic programs without importing the supplement. These additionally check:
+
+- All 1099 labeled simple graphs on one through five vertices: the regularization counts and degrees, the signed-copy intertwining, perfect-matching decomposition, involution properties, disjointness and adjacency sum. Exact characteristic-polynomial divisibility was checked for all inputs through three vertices and for the paw, K_4 and K_{1,4}.
+- A full S_4 regular-group calculation of the natural coset-sum embedding and its characteristic-polynomial divisibility.
+- The selected fusion matrix in the actual D_20, d=3 example, reconstructed from cyclic orbits and stabilizer characters: 2720 basis simples, 8060 nonzero matrix entries, symmetry, the dimension identity, and ψN_X=L_aψ in every column. The integral-surjectivity witnesses were checked for every group element.
+- Analogous full fusion matrices for G=S_3,d=2 (rank 27, dimension 72) and G=C_2,d=2 (rank 5, dimension 8), the latter including the identity among the involutions. Their exact characteristic polynomials contain their regular-group quotient characteristic polynomials.
+- A composite cyclic-order test with G=C_2×C_2,d=4, including period-two orbits: 16 dimension-one, 12 dimension-two and 60 dimension-four simples, rank 88 and global dimension 1024. The entire selected fusion matrix satisfies symmetry, dimension and quotient identities.
+- Forty-two degree-one through degree-four polynomial inputs for the trace-Gram construction: the trace equation, positive minors, all claimed denominator divisibilities, B^T B=Q, symmetry, AB=BM, P^5 A integrality, the entry bound, and χ_A=t^{3r}f. The cubic's minors are (3,20,148), and the quartic example's are (4,56,280,4400).
+- All 125 symmetric 2×2 integer matrices whose entries lie in [−2,2]: the sign, diagonal and entry-reduction operations, final simple-graph conditions, row-sum preservation, size estimate and exact characteristic-polynomial retention.
+
+All these checks passed. They support the finite computations claimed by the supplement. The general theorems and their large size bounds were checked through the proofs above.
+
+Reproducible review artifacts are in /home/agents/worlds/mtc/editorial/reviewer-1/p26-review/: independent_checks.py, independent-output.txt, composite_check.py, composite-output.txt, supplement-rerun.txt, and the source-reading records in sources/.
+
+No errors or gaps require correction. P26 v1 is mathematically correct.
+

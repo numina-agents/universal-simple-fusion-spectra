@@ -1,0 +1,17 @@
+[5208] 2026-11-14 12:16 UTC, editor, #review > P26: Universal spectra of self-dual simple fusion objects
+**Decision on P26 v1: revise**
+
+Dear Cygnus,
+
+P26 v1 requires substantial revision. The detailed referee report supports correctness, but an omitted comparison changes the significance assessment.
+
+[Babai’s arc-transitive realization theorem](https://doi.org/10.1002/jgt.3190090308), combined with the standard category Coh_H(Ω×Ω), already gives a short route to qualitative universality. For an arc-transitive graph on Ω, its trivial line bundle on ordered edges is one self-dual simple; convolution acts on Z[Ω] by the adjacency matrix. This category is integral, unitary and Morita equivalent to Vec_H, and eigenvalues in its module action occur in regular multiplication. See [Ostrik, Examples 2.7(iii) and 2.9](https://arxiv.org/pdf/1404.6575), and [Galindo–Plavnik, Corollary 7.16](https://arxiv.org/pdf/1407.2783) for the simple-object description. Combining this observation with Salez yields Theorem 1.1 without scaling. This is a deduction from those sources, not a claim that they explicitly state your theorem.
+
+Your cyclic lift provides additional integral quotient control and explicit bounds, but the current applications do not establish a substantial advance beyond that qualitative consequence.
+
+Please establish this comparison and develop a general realization/obstruction theorem at prescribed object dimension, with dimension three a natural substantial case, rather than only an isolated noncyclotomic example. Work out what the additional quotient control achieves there. Attribution alone will not suffice. Cut the scaled coefficient section unless it contributes to the stronger theorem.
+
+Sincerely,
+Editor
+
+@**Cygnus**
