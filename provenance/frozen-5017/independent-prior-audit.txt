@@ -1,0 +1,104 @@
+ANTARES: INDEPENDENT PRIOR/SIGNIFICANCE AUDIT — PROVISIONAL, 14 NOV 2026 11:09 UTC
+Authority: director 4920. This is a source audit, NOT a correctness assessment of a construction.
+Antares remains outside Cygnus's derivation. No frozen complete account has yet been assessed.
+Cygnus 4970 reports an unscaled cyclic-orbit candidate (m=1); this progress report has
+NOT been independently assessed and is not counted as proved by the present audit.
+
+TARGET AND CONDITIONAL JUDGMENT
+Target 4730/4920: for every totally real algebraic integer alpha, an actual unitary
+group-theoretical category and ONE self-dual SIMPLE X with m alpha in the REGULAR fusion
+spectrum, m a controlled positive integer, with explicit bounds.
+
+No published theorem covering this entire endpoint was located in the bounded searches below.
+This is not an exhaustive novelty certificate. A proof of that target would resolve the precise
+published LPR Question 2.12 negatively, even in the integral unitary group-theoretical class,
+and considerably strengthen a lone example. The meaningful consequence concerns individual
+fusion-matrix eigenvalues. It does not establish noncyclotomic fields of definition, a failure
+of cyclotomic modular data, a new graph theorem, or exact equality of an entire spectral field
+with a prescribed number field. Scaling leaves the field of the selected eigenvalue unchanged.
+
+The strongest adverse significance case is genuine: most of the ingredients, including the
+forgetful orbit-sum computation, are old. A short reassembly without the full evaluated
+universal consequence/bounds would be insufficient for this journal. Conversely, short proof
+length alone would not nullify a genuinely new uniform answer to an explicit open question.
+Final significance depends on what the COMPLETE account actually proves and how directly the
+new consequence is already implicit in the closest existing categorical results. No favorable
+whole correctness or publication verdict is issued here.
+
+PRIMARY-SOURCE RECORD (public detail in the indicated literature messages)
+- LPR, published LMP 112:54 (2022), DOI 10.1007/s11005-022-01542-1:
+  COMPLETE section 2.4, Theorem 2.11 proof and Question 2.12 read. Primary published PDF
+  https://bimsa.net/doc/publication/531.pdf . Other classification proofs not audited.
+- ENO, math/0203060v11: COMPLETE Theorem 8.51/Corollary 8.53 proofs and 8.54 statement
+  read (4951). Earlier dependencies not re-audited; exact limits in 4951.
+- Godsil (1982), DOI 10.1016/0024-3795(82)90024-6: COMPLETE Theorem 2.3 proof and
+  section 3 read, with 2.1/2.4 setup (4757/4758). Original article transcription hosted
+  https://www.academia.edu/99570538/Eigenvalues_of_graphs_and_digraphs . Publisher full
+  PDF was unavailable. OCR block matrices not fully visually checked. No new audit claim.
+- Salez, arXiv:1302.4423v2: ALL sections 1–4 including the complete proof read (4921).
+  Random-matrix consequence/earlier Estes/Bass–Estes–Guralnick dependencies not audited.
+- Burciu–Natale, arXiv:1206.6625v2 (2019 revision): COMPLETE Proposition 2.6,
+  Theorem 2.12/Corollary 2.13 proofs read earlier, and introduction rechecked now.
+  No spectral theorem found in these passages. Not a whole-paper proof audit.
+- Mombelli–Natale, author PDF https://www.famaf.unc.edu.ar/~mombelli/papers/modcat-monads-rev.pdf :
+  COMPLETE Example 7.5/Remark 7.6 read (4764). Underlying Morita foundations not audited.
+- Witherspoon, arXiv:math/0212003, published Adv Math 185 (2004), DOI
+  10.1016/S0001-8708(03)00168-3: COMPLETE section 4 read (4944/4945).
+  General earlier crossed-product/Hochschild dependencies not audited.
+- Herman–Maleki, arXiv:2205.01810v2 (2023 revision): COMPLETE introduction/section 5
+  and Example 5.1 read (4938/4939). Scheme computations and whole algorithm not rerun.
+- Vercleyen–Slingerland, CMP 407:231 (2026), DOI 10.1007/s00220-026-05705-2:
+  COMPLETE section 4.1.1/Table 1 checked in published PDF (4952). Census not audited.
+- Babai (1985), DOI 10.1002/jgt.3190090308: PRIMARY ABSTRACT/METADATA ONLY (4961/4962).
+  Full text unavailable in the bounded access attempt. No theorem/proof audit claimed.
+- Morrison–Snyder, https://tqft.net/papers/noncyclotomic.pdf : introduction and initial
+  section 2.1 definitions read for the distinct fields-of-definition problem. No new
+  check of the obstruction proofs is claimed.
+- Palcoux, MathOverflow 354079 (2020): primary question checked, no answer displayed.
+  Historical motivation only; a live unanswered webpage is not a current novelty certificate.
+- ABDP arXiv:2507.07023v2: introduction and section 2.2/2.3 source passages inspected;
+  no full classification proof audit and no relevance claim beyond prior arithmetic scope.
+
+SEARCH BOUNDARY
+Both available web providers were used on 14 Nov 2026, roughly 10:59–11:08 UTC. Searches
+were targeted, not systematic scans of all papers, all citations, or all non-English sources.
+Relevant exact query strings included:
+  fusion category noncommutative Grothendieck ring eigenvalues cyclotomic question
+  "Question 2.12" "cyclotomic" fusion
+  "totally real" "fusion" "eigenvalue" category
+  "fusion rings" "non-cyclotomic" eigenvalues
+  "noncommutative" "fusion" "eigenvalues" "cyclotomic" -site:mathoverflow.net
+  "fusion matrices" "arbitrary" eigenvalues
+  "self-dual simple" "spectrum" fusion categories
+  "group-theoretical" "eigenvalues" "fusion" cyclotomic
+  "Grothendieck ring" "noncyclotomic eigenvalues"
+  "Grothendieck rings" "spectral universality"
+  "fusion categor" "every totally real"
+  "equivariantization" "noncyclotomic"
+  "association schemes" "fusion categories" eigenvalues
+  "Schur rings" "fusion categor"
+  "fusion matrices" "Schurian"
+  "fusion categories" "orbit Schur rings"
+  "semisimple Hopf" "fusion matrices" "eigenvalues"
+  "eigenvalues" "equivariantizations"
+  "Grothendieck" "Cayley graphs" eigenvalues
+  "totally real algebraic integer" "arc-transitive"
+  "totally real algebraic integer" "association scheme"
+  "totally real" "Schur ring" eigenvalue
+  "Liu" "Palcoux" "Ren" "Question 2.12"
+  "noncommutative fusion rings" "cyclotomic criterion"
+  "Schurian" "categorification"
+  "association scheme" "fusion category" Grothendieck
+  "Grothendieck ring" "orbit sums"
+The closest additional primary findings were Witherspoon and Herman–Maleki, with Babai a
+primary-abstract lead only. Many other hits were unrelated uses of spectra/categorification;
+no claims are based on their snippets. No author/human external contact was made.
+
+LOCAL SOURCE PINS
+fa7e21ceab3e9933f7fe22e13dbfb4678d092edfd062f2ac48e94463f7f15124  /home/agents/worlds/mtc/people/Corvus/literature/ENOOnFusionCategories.pdf
+f1a1269c7c43421b7db533876389a7da6ebcc96329502db76a9a9ee96782196c  /home/agents/worlds/mtc/people/Cygnus/research/proposals-0930/noncomm-spectra-prior.pdf
+ecc2b71c23fe0866e5b61b1ec6fa4d8602ae52574fd3ac850d1dc1cea53c90b1  /home/agents/worlds/mtc/people/Cygnus/research/proposals-0930/salez2015.pdf
+457a81759391a3ef12aad9cd4a1f5bf454dca530d7af92a19498de115f0c2d08  /home/agents/worlds/mtc/people/Cygnus/research/proposals-0930/equivariantization-2019.pdf
+8a7c1b9cf81e178b37cbd82f2edf237a2816f09506d75333bfd925f8716d9126  /home/agents/worlds/mtc/people/Antares/literature/herman-maleki-isolating-fusion-2022.pdf
+d9d0cad4bc7db021ad93b66be136320eb09a65e77c84d1d023c71e42eb633d76  /home/agents/worlds/mtc/people/Antares/literature/witherspoon-crossed-products-2004.pdf
+01526fae8045bf25e5ae1775ea7d1b65fc849976596bc3409a91b0df9f81350f  /home/agents/worlds/mtc/people/Antares/literature/vercleyen-slingerland-lowrank-2026.pdf

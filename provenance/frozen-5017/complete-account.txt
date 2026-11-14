@@ -1,0 +1,447 @@
+UNIVERSAL SPECTRA OF SELF-DUAL SIMPLE FUSION OBJECTS
+Cygnus, 14 November 2026. Research account under director allocation 4920.
+Complete account for ENTIRE independent scrutiny; NOT independently certified.
+Not a preprint or a submission. No publication has been authorized.
+
+MAIN RESULTS AND CONVENTIONS
+
+A fusion matrix N_X is REGULAR left multiplication by [X] on
+K_0(C) tensor C, in the basis of simple isomorphism classes. It is not a
+selected small representation of that ring. Categories below are actual
+unitary group-theoretical fusion categories, not hypothetical fusion rings.
+They need not be braided. Their Drinfeld centers are modular, but no
+noncyclotomic modular-data or symbol-field claim is made.
+
+Theorem A (graph realization, with bounds).
+Let Gamma be a finite simple undirected graph with n>=1 vertices, e edges
+and maximum degree Delta. Put
+ d=max(2,Delta),       N=4dn-4e.
+There exist a unitary group-theoretical fusion category C, a self-dual
+SIMPLE X in C, and a dominant tensor functor C -> Vec_(S_N), such that
+
+ FPdim(X)=d,      FPdim(C)=d(N!)^d,
+ rank(C)<=d(N!)^d<=d((4dn)!)^d,
+ characteristic_polynomial(A_Gamma) divides
+ characteristic_polynomial(N_X) in Z[t].
+
+The self-duality is supplied by an explicit symmetric invariant pairing.
+In particular no multiplicative scaling of the graph spectrum is needed.
+
+Theorem B (exact arithmetic universality).
+The union of spectra of self-dual simple objects in unitary
+GROUP-THEORETICAL fusion categories is EXACTLY the set of totally real
+algebraic integers. In particular every totally real algebraic integer
+alpha occurs with scale m=1 in the REGULAR fusion matrix of ONE such
+simple object.
+
+The quantitative form in Theorem A takes any finite graph realization as
+input. Section 6 additionally gives an explicit coefficient-input size and
+positive-integer scaling bound from a minimal polynomial; it does not
+assert a degree/height bound for the unscaled Salez tree realization.
+
+Theorem C (a sharp integral-dimension threshold).
+All eigenvalues of a self-dual simple object of FP dimension at most 2
+in any complex fusion category are cyclotomic integers. There is a
+self-dual simple of FP dimension 3 in an actual unitary group-theoretical
+category with noncyclotomic fusion eigenvalues. Thus 3 is the least
+INTEGER FP dimension permitting this phenomenon in integral categories.
+No assertion about the interval 2<FPdim(X)<3 is made.
+
+These statements resolve Liu--Palcoux--Ren Question 2.12 negatively, with
+an exact universal realization theorem. The published graph realization,
+equivariantization classification, Morita theory, and cyclotomic
+character-TRACE theorem are all PRIOR. The new categorical interface is
+the evaluated universal consequence of the cyclic lift below. The known
+forgetful orbit-sum formula itself is also prior (Witherspoon Theorem 4.8).
+
+1. THE CYCLIC SIMPLE LIFT AND AN ACTUAL TENSOR FUNCTOR
+
+Proposition 1.
+Let G be a finite group and s_0,...,s_(d-1) be DISTINCT elements satisfying
+s_i^2=1, where d>=2. They need not generate G. There is a unitary
+group-theoretical fusion category C and a self-dual simple X such that
+
+ FPdim(C)=d |G|^d,       FPdim(X)=d,
+ K_0(C) -> Z[G] is a SURJECTIVE UNITAL RING HOMOMORPHISM,
+ [X] maps to a=s_0+...+s_(d-1).
+
+The ring map is induced by a dominant tensor functor C -> Vec_G. Hence
+characteristic_polynomial(L_a on C[G]) divides
+characteristic_polynomial(N_X) in Z[t].
+
+Construction and proof.
+Write K=G^d and H=C_d=Z/d. Indices are in Z/d; let sigma_r act on K by
+(sigma_r(g))_i=g_(i-r). This is a strict action by group automorphisms,
+hence by unitary tensor autoequivalences rho_r on Vec_K. Define
+
+                   C=(Vec_(G^d))^(C_d).
+
+Concretely an object is a K-graded Hilbert space with unitary equivariance
+u_r:rho_r(V)->V satisfying u_r rho_r(u_s)=u_(r+s). Tensor product is the
+ordinary graded tensor product with diagonal equivariance. Morphisms,
+adjoints, rigidity, and the positive pivotal structure are the usual ones.
+This is the standard unitary equivariantization, of FP dimension
+|H| FPdim(Vec_K)=d |G|^d.
+
+Let t=(s_0,...,s_(d-1)) and O={sigma_r(t):r in H}. Distinctness of all
+coordinates makes this cyclic orbit free, so |O|=d. Let X have one line
+C e_g in each grade g in O. Define u_r(rho_r(e_g))=e_(sigma_r(g)).
+These permutation maps satisfy the displayed equivariance equation, so
+this specifies an ACTUAL equivariant object, with no projective
+stabilizer ambiguity. A graded endomorphism is diagonal on its d distinct
+grades; equivariance makes its d scalars equal. Thus End_C(X)=C, and X
+is simple. Its underlying Hilbert-space dimension, and FP dimension, is d.
+This also directly verifies the special orbit/inertia classification used
+here; we are not assigning simplicity to an unchosen orbit sum.
+
+Every g in O satisfies g^(-1)=g, because all its coordinates square to 1.
+The pairing
+                   b(e_g,e_h)=1 if g=h, and 0 otherwise
+is a morphism X tensor X -> 1 in Vec_K: a nonzero pairing has grade
+gh=g^2=1. It is H-invariant because all u_r are the same permutation on
+both factors. It is symmetric and nondegenerate, with coevaluation
+sum_g e_g tensor e_g. The two zigzags hold on this displayed basis. It
+therefore gives the required EQUIVARIANT self-duality, not merely a
+self-dual forgetful object. The associated map X->X* is unitary. With
+the standard pivotal structure the same pairing gives second indicator +1,
+although that indicator is not needed for the spectral conclusion.
+
+The following orbit-sum forgetful formula is a special case of PRIOR
+Witherspoon Theorem 4.8. We give the exact maps to establish the full
+regular quotient needed here. The forgetful tensor functor C->Vec_K
+followed by push-forward of grading
+along the group homomorphism p_1:K->G is a tensor functor
+                         T:C->Vec_G.
+Push-forward takes a line in grade (g_0,...,g_(d-1)) to grade g_0; since
+p_1(gh)=p_1(g)p_1(h), its tensor constraints are the canonical ones. Thus
+its Grothendieck map psi is a unital ring homomorphism. Each s_i occurs
+exactly once as the first coordinate of the d orbit tuples, giving
+                            psi([X])=sum_i s_i.
+
+For g != 1 in G, apply the identical free-orbit construction to the tuple
+(g,1,...,1); it has d distinct orbit points even though some coordinates
+repeat. Call this simple Y_g. Then
+                psi([Y_g])=g+(d-1)1,       psi([1_C])=1.
+Consequently every group basis element is in the Z-linear image:
+g=psi([Y_g]-(d-1)[1_C]) for g!=1. Hence psi:K_0(C)->Z[G] is SURJECTIVE,
+and T is dominant since every graded simple occurs in some T(Y_g).
+
+The kernel of psi is stable under left multiplication by [X]. Its quotient
+is the FREE abelian group Z[G], with left multiplication by a. A basis
+adapted to this integral quotient, or ordinary characteristic polynomial
+factorization on its complexification, gives the asserted divisibility
+in Z[t]. This is a quotient of the REGULAR fusion representation; no
+identification with a full matrix algebra is needed.
+
+Finally the standard equivariantization/crossed-product Morita theorem
+identifies C up to Morita equivalence with Vec_K crossed H. Because the
+action is strict, this crossed product is the pointed category on the
+semidirect product G^d semidirect C_d, with multiplication
+       (g,r)(h,s)=(g sigma_r(h),r+s).
+Thus C is group-theoretical. This invokes the established theorem stated
+in Mombelli--Natale Example 7.5/Remark 7.6, not a new Morita result.
+All dimensions above are exact. This completes Proposition 1.
+
+2. QUANTITATIVE GRAPH INPUT (GODSIL'S CONSTRUCTION, RESTATED)
+
+This section is supporting PRIOR graph theory. We restate the relevant
+construction to fix its size and multiplicity bounds explicitly. It is
+Godsil's regularization/matching route, not a new graph realization theorem.
+
+Let d=max(2,Delta). For each vertex v of Gamma form d-deg(v) deficit
+labels (v,j). Their number is delta=dn-2e>=0. Construct a graph Y from
+d disjoint copies of Gamma, with vertices (i,v), and the delta deficit
+vertices. Join (v,j) to (i,v) for EVERY copy i. Retain the original edges
+within each copy. This is simple and undirected. Each copy vertex now
+has d neighbors; each deficit vertex has exactly d neighbors. Thus Y is
+d-regular on
+                          M=dn+delta=2dn-2e
+vertices. The map
+                 x -> (0,x,-x,0,...,0)
+from the original n-dimensional adjacency module to the deficit/d-copy
+coordinates intertwines A_Gamma and A_Y. It is injective because d>=2.
+Therefore charpoly(A_Gamma) divides charpoly(A_Y).
+
+The bipartite double has adjacency
+                         B = [ 0  A_Y ; A_Y  0 ]
+and N=2M=4dn-4e vertices. The diagonal subspace y->(y,y) intertwines
+A_Y and B. The double is d-regular bipartite. Hall's theorem, iterated
+after removing a matching, partitions its edges into d perfect matchings.
+Their adjacency matrices are the permutation matrices of d DISTINCT
+fixed-point-free involutions s_0,...,s_(d-1) in G=S_N, and their sum is B.
+
+We choose FULL G=S_N, rather than necessarily the subgroup generated by
+the matchings. This ensures the natural N-dimensional permutation module
+embeds in the regular group module, WITH multiplicities. Explicitly let
+H_0=S_(N-1) be the stabilizer of vertex 1. The normalized sums of group
+basis vectors in the N left cosets g H_0 form an invariant subspace of
+C[G], permuted exactly as those N vertices. Thus B is the restriction of
+L_a, a=sum_i s_i, to that subspace, and
+        charpoly(A_Gamma) | charpoly(A_Y) | charpoly(B) | charpoly(L_a).
+All these are integral monic polynomials. No claim of connectedness of
+the resulting Cayley graph is needed.
+
+Apply Proposition 1 to G=S_N and the d matchings. Its regular quotient
+then proves Theorem A. The rank bound follows from rank(C)<=FPdim(C),
+as every simple has FP dimension at least 1. The construction is finite
+and explicit, using a perfect-matching decomposition, and has no hidden
+categorification hypothesis.
+
+3. EXACT UNIVERSALITY, NECESSITY, AND THE PRIOR ARITHMETIC QUESTION
+
+Salez Theorem 1 states that every totally real algebraic integer alpha is
+an eigenvalue of a finite tree. Apply Theorem A to that tree. This proves
+the sufficiency in Theorem B with m=1.
+
+Conversely, by rigidity N_X^transpose=N_(X*). A self-dual X therefore has
+a symmetric integral fusion matrix. Its characteristic polynomial is a
+real-rooted monic integral polynomial, so every eigenvalue is a totally
+real algebraic integer. This proves necessity, hence the EXACT equality
+of the two sets in Theorem B.
+
+Liu--Palcoux--Ren Theorem 2.11 proves cyclotomicity of fusion-matrix
+eigenvalues in a COMMUTATIVE categorifiable fusion ring, and Question 2.12
+asks whether the criterion extends to the noncommutative case. Taking
+any noncyclotomic totally real algebraic integer in Theorem B disproves
+that extension. The example below supplies an explicit one in a simple
+of FP dimension 3.
+
+ENO Theorem 8.51 gives cyclotomic character traces, and Corollary 8.53
+provides cyclotomic models of irreducible representations. Those PRIOR
+results are consistent with everything above. An individual eigenvalue
+of a higher-dimensional matrix need not belong to its coefficient field.
+In particular the theorem does not assert noncyclotomic F-symbol fields
+or a failure of modular-data cyclotomicity. The categories constructed
+are group-theoretical. The word SIMPLE refers to X, not to the algebraic
+multiplicity of one eigenvalue. Noncyclotomic regular eigenvalues must
+repeat in higher-dimensional regular blocks, consistent with the prior
+Calegari--Morrison--Snyder multiplicity-one observation.
+
+4. EXPLICIT NONCYCLOTOMIC CONTROL AT SIMPLE DIMENSION THREE
+
+Let
+ G=<r,s | r^10=s^2=1, srs=r^(-1)>,       |G|=20,
+and take the three distinct involutions s,rs,r^3 s. Proposition 1 gives
+ C=(Vec_(G^3))^(C_3),         FPdim(C)=24000,
+and a self-dual simple X of FP dimension 3, with
+                         psi([X])=a=s+rs+r^3s.
+
+Let zeta=exp(pi i/5). In the two-dimensional representation
+ pi(r)=diag(zeta,zeta^(-1)),      pi(s)=[0 1;1 0],
+pi(a) has off-diagonal entries u=1+zeta+zeta^3 and its conjugate. Thus
+its eigenvalues are +/-lambda, where
+ lambda^2=|u|^2
+  =3+(zeta+zeta^-1)+(zeta^2+zeta^-2)+(zeta^3+zeta^-3)
+  =(7+sqrt(5))/2.
+
+Set f(t)=t^4-7t^2+11. This is irreducible: y=(7+sqrt(5))/2 has degree 2,
+and is not a square in Q(sqrt(5)), because its field norm is 11, not a
+rational square. Hence lambda has degree 4.
+
+Moreover Q(lambda) is NOT Galois over Q. It contains Q(sqrt(5)). If it
+contained sqrt(11), it would equal the degree-four biquadratic field
+Q(sqrt(5),sqrt(11)). Write lambda=A+B sqrt(11), A,B in Q(sqrt(5)). Since
+lambda^2=y is in that quadratic field, AB=0. If B=0 then y is a square
+there, impossible by its norm 11. If A=0 then y/11 is a square there,
+impossible by its norm 1/11. Thus sqrt(11) is absent. The conjugate
+sqrt((7-sqrt(5))/2)=sqrt(11)/lambda is consequently absent, proving
+non-normality. Every subfield of a cyclotomic field is Galois over Q,
+so lambda is NONCYCLOTOMIC. It occurs in the regular group spectrum,
+and hence in N_X by Proposition 1.
+
+For an exact small verification, the regular group matrix L_a has
+characteristic polynomial
+ (t^2-9)(t^2-1)(t^4-7t^2+11)^2(t^4-3t^2+1)^2.
+In particular the noncyclotomic eigenvalues already repeat there.
+The category has rank 2720: among the 20^3 graded tuples, 20 constant
+tuples have inertia C_3 and give three one-dimensional simples each;
+the other 7980 form 2660 free orbits and give three-dimensional simples.
+Thus 60+2660=2720 and 60+9*2660=24000. This is an actual category,
+not a putative matrix. No 2720-by-2720 fusion matrix is generated or
+needed; the exact 20-by-20 group calculation checks the stated control.
+
+5. THE SHARP INTEGRAL-DIMENSION THRESHOLD
+
+Let X be self-dual with FPdim(X)<=2 in any complex fusion category.
+Its symmetric integral matrix has spectral radius FPdim(X), so every
+conjugate of every eigenvalue beta is in [-2,2]. If z satisfies
+z^2-beta z+1=0, it is an algebraic integer and all its conjugates have
+absolute value 1. Kronecker's theorem makes z a root of unity. Hence
+beta=z+z^(-1) is cyclotomic. The preceding example has FPdim(X)=3,
+proving Theorem C. This is a consequence of the complete construction,
+not a separate intended paper or a claimed classification of fusion
+categories generated by dimension-three objects.
+
+6. EXPLICIT COEFFICIENT-INPUT BOUNDS FOR THE SCALED TARGET
+
+For completeness the original positive-integer-scaled target can be
+made effective directly in terms of a polynomial, with deliberately
+coarse bounds. This supporting linear algebra does not replace the
+stronger unscaled universality from Salez.
+
+Suppose alpha has monic irreducible totally real minimal polynomial of
+degree r>=1 and integer coefficient height H>=1. Put R=H+1 and
+L=r R^(2r-2). Let M be multiplication by alpha on the power basis of
+Q(alpha), and let Q_ij=Tr(alpha^(i+j)), 0<=i,j<r. Then Q is positive
+definite integral, QM=M^transpose Q, and every entry has absolute value
+at most L. Write Delta_i for its positive leading principal minors,
+Delta_0=1, and P=product_(i=1)^r Delta_i. Define
+                          ell=P^5,       kappa=ell R.
+In particular
+ ell <= (product_(i=1)^r i!)^5 L^(5r(r+1)/2).
+
+Here is a completely rational symmetric realization with controlled
+denominators. In Q=L_0 D L_0^transpose, take L_0 unit lower triangular.
+Its entries have denominators dividing P, by the usual minor formula
+for rational LDL decomposition. Write D_i=a_i/b_i in lowest terms;
+b_i divides Delta_(i-1), hence P. Express the positive integer a_i b_i
+as four integer squares (Lagrange's theorem). Dividing those four
+integers by b_i produces a column block whose squared norm is D_i.
+The resulting 4r-by-r matrix B_0 has B_0^transpose B_0=D and denominator
+dividing P. Set B=B_0 L_0^transpose. Then
+               B^transpose B=Q,       denominator(B) divides P^2.
+Consequently
+                    A=B M Q^(-1) B^transpose
+is symmetric rational, AB=BM, and is zero on the orthogonal complement
+of im(B). Its eigenvalues are exactly the conjugates of alpha, plus 3r
+zeros. Since the denominator of Q^(-1) divides Delta_r, that of A
+divides P^5. Thus W=ell A is a symmetric INTEGER matrix of size 4r.
+All its eigenvalues have absolute value at most ell R=kappa, so every
+entry of W has absolute value at most kappa.
+
+We now use the block construction in Godsil Lemma 2.4, keeping an explicit
+size bound. For any two matrices U,V the block matrix
+                 C(U,V)=[U V; V U]
+has invariant diagonal and anti-diagonal subspaces with restrictions
+U+V and U-V. First write W=W_+-W_- and pass to C(W_+,W_-), a nonnegative
+symmetric integral matrix of twice the size. Next split its off-diagonal
+part U and diagonal part V and pass to C(U,V). The result has ZERO
+diagonal, is symmetric nonnegative integral, and retains the entire
+spectrum of W. If an entry exceeds 1, split the current matrix as D+E,
+where E is its support indicator and D subtracts 1 from each positive
+entry, and replace it by C(D,E). Each iteration reduces the maximal
+entry by one, keeping zero diagonal and symmetry. At most kappa-1
+iterations produce the adjacency of a simple graph Gamma. Therefore
+
+ n_Gamma <= 2^(kappa+3) r,       Delta_Gamma <= 4r kappa.
+
+The degree bound follows because the row sums after the first block
+step are the absolute row sums of W, at most 4r kappa, and every
+subsequent block step preserves row sums. These are classical graph
+spectral operations; no new graph theorem is asserted.
+
+Apply Theorem A to this Gamma. With D=max(2,Delta_Gamma), one obtains
+ell alpha in the REGULAR matrix of one self-dual simple, with bounds
+
+ FPdim(X)=D <= 4r kappa,
+ N <= 2^(kappa+7) r^2 kappa,
+ FPdim(C) <= (4r kappa) ((2^(kappa+7) r^2 kappa)!)^(4r kappa).
+
+This gives explicit scale and size bounds from the polynomial input.
+They are intentionally enormous; no efficient recognition algorithm,
+optimal degree-height bound or unscaled coefficient-size bound is claimed.
+All operations are finite exact constructions. Theoretical bounds do not
+require running these huge constructions on the group's server.
+
+7. PRIMARY CREDIT, NOVELTY, SIGNIFICANCE, AND ACTUAL READING LIMITS
+
+[LPR] Liu--Palcoux--Ren, Classification of Grothendieck rings of complex
+fusion categories of multiplicity one up to rank six, LMP 112:54 (2022),
+DOI 10.1007/s11005-022-01542-1, Section 2.4, Theorem 2.11 and Question
+2.12. I read that COMPLETE statement/proof/question in the published
+primary PDF. The noncommutative question is the advertised old target.
+No commutative or modular cyclotomicity theorem is claimed new.
+
+[ENO] Etingof--Nikshych--Ostrik, On fusion categories, Annals 162 (2005),
+581--642, Theorem 8.51, Corollaries 8.53--8.54. I read the COMPLETE
+8.51/8.53 proofs and the 8.54 statement, not the whole paper. Character
+traces, cyclotomic representation models and cyclotomic FP dimensions
+are prior, not statements of cyclotomic eigenvalues of arbitrary matrices.
+
+[Godsil] Eigenvalues of graphs and digraphs, LAA 46 (1982), 43--50,
+DOI 10.1016/0024-3795(82)90024-6. Theorems 2.1/2.3/3.3, Lemma 2.4,
+Corollary 3.4. I read the COMPLETE Theorem 2.3 proof, Section 3's
+graph argument and the regularization setup in the original article
+transcription hosted by Academia. The publisher PDF was inaccessible;
+I did not visually check its OCR block matrices. Sections 2 and 6 above
+state and prove every graph operation needed here, while crediting their
+prior source. Graph-to-Cayley universality is not our contribution.
+
+[Salez] Every totally real algebraic integer is a tree eigenvalue,
+arXiv:1302.4423v2, JCT B 111 (2015), 249--256, Theorem 1.
+I read the precise theorem, introduction and proof-outline scope, not
+its complete proof. It is invoked as published PRIOR. The older graph
+eigenvalue theorem of Estes is credited by Salez. Antares independently
+read Salez's entire proof in his separate prior audit.
+
+[BN] Burciu--Natale, Fusion rules of equivariantizations of fusion
+categories, arXiv:1206.6625v2 (2019 revision), Proposition 2.6, Theorem
+2.12 and Corollary 2.13. I read those COMPLETE proofs. Orbit/inertia
+classification is prior. Proposition 1 explicitly constructs and checks
+the specific free-orbit simple and its dual, rather than claiming a new
+classification theorem or ignoring the corrected tensor-action hypothesis.
+
+[MN] Mombelli--Natale, Module categories over equivariantized tensor
+categories, authors' primary manuscript, Example 7.5/Remark 7.6.
+I read both COMPLETE passages and their cited crossed-product dependency,
+not the entire Morita construction. Pointed equivariantizations are
+group-theoretical by PRIOR theory. The strict cyclic action here is
+within those hypotheses, and its crossed product is explicitly pointed.
+
+[Witherspoon] Products in Hochschild cohomology and Grothendieck rings
+of group crossed products, arXiv:math/0212003, Adv. Math. 185 (2004),
+DOI 10.1016/S0001-8708(03)00168-3, Theorem 4.8. Its orbit-sum
+forgetful computation and product formula are PRIOR. Antares read the
+COMPLETE Section 4 and I read his ENTIRE source report; I have not
+personally read that whole primary section. No novelty is assigned
+to that formula in this account.
+
+[CMS] Calegari--Morrison--Snyder, Cyclotomic integers, fusion categories,
+and subfactors, Lemma 3.0.7: the multiplicity-one regular spectral
+constraint is PRIOR. The elementary regular-block explanation suffices
+here; no argument above requires a new CMS theorem.
+
+Classical additional inputs are Hall's matching theorem, Lagrange's
+four-square theorem and Kronecker's root-of-unity theorem. The exact
+linear algebra in Section 6 is supplied above and is supporting
+quantification, not a new number-field realization theorem.
+
+Antares's separate prior/significance report 4979, SHA256
+df0c42b925b94107c0b38edbefc206c2b19455a69a7f04a6d33bc4761fc627e4,
+was read by me in its ENTIRETY. It includes exact primary scopes for the
+closest orbit-algebra and association-scheme results of Witherspoon and
+Herman--Maleki, two-provider bounded targeted searches, and the recent
+Vercleyen--Slingerland criteria table. I do not claim personally to have
+read those additional whole sections; Antares's limits are retained in
+that report. No covering universal ONE-simple theorem was found there.
+This is a bounded novelty audit, not proof of exhaustive literature
+absence or an existing correctness verdict for this account.
+
+The substantive proposed advance is an EXACT characterization of all
+self-dual simple fusion spectra already inside integral unitary
+group-theoretical categories, with explicit graph transfer/size bounds,
+an evaluated coefficient-input bound, and a sharp least integral object
+dimension for noncyclotomic spectra. It answers the precise published
+noncommutative question. It does not assert that one matrix generates
+exactly a prescribed entire number field, that modular eigencharacters
+are noncyclotomic, or that any category lacks a cyclotomic form.
+
+The adverse significance case remains: all tools are established and the
+new interface is short. A proof must be assessed as the full universal
+categorical consequence, not as a reproof of graph universality or a
+single isolated example. I propose one complete result only, not a
+separate example or threshold paper. Independent ENTIRE scrutiny is
+pending. No publication is requested before that judgment.
+
+8. SMALL EXACT CHECKS AND PROVENANCE
+
+checks.py checks the graph regularization/intertwining and three matching
+involutions on the four-vertex paw graph; its cubic characteristic factor
+has discriminant 148. It also checks the exact 20-by-20 regular group
+polynomial and rank/dimension arithmetic of Section 4. It checks the
+complete rational trace-Gram construction on the cubic paw factor and
+the signed/diagonal/support block graph operations on a tiny example. It does not
+construct a large fusion dataset or certify a categorical classification.
+The proof is independent of the code. Output and a source ledger are
+retained alongside this account. All claims, including every supporting
+bound and consequence, are submitted together for ONE whole assessment.

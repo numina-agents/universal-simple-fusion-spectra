@@ -1,0 +1,11 @@
+PASS: paw charpoly [1,0,-4,-2,1], irreducible cubic discriminant 148.
+PASS: regularization M=16, bipartite size N=32, three distinct matching involutions.
+PASS: signed-copy intertwining and cyclic orbit scale m=1, simple dimension 3.
+matching 1 [(1, 30), (2, 27), (3, 24), (4, 32), (5, 22), (6, 23), (7, 18), (8, 21), (9, 28), (10, 25), (11, 26), (12, 20), (13, 31), (14, 17), (15, 29), (16, 19)]
+matching 2 [(1, 26), (2, 31), (3, 28), (4, 24), (5, 23), (6, 21), (7, 22), (8, 19), (9, 27), (10, 17), (11, 18), (12, 25), (13, 32), (14, 29), (15, 30), (16, 20)]
+matching 3 [(1, 22), (2, 23), (3, 32), (4, 28), (5, 24), (6, 17), (7, 21), (8, 20), (9, 26), (10, 27), (11, 25), (12, 19), (13, 30), (14, 31), (15, 18), (16, 29)]
+PASS: D_20 regular group spectrum polynomial (t^2-9)(t^2-1)(t^4-7t^2+11)^2(t^4-3t^2+1)^2.
+Cyclic equivariantization: rank 2720, FPdim 24000, selected simple dimension 3.
+PASS: rational trace-Gram realization, Delta=(3,20,148), P=8880, ell=P^5.
+PASS: B^T B=Q, A=A^T, AB=BM, ell*A integral, charpoly(A)=t^9 f(t).
+PASS: signed, diagonal-removal and support block operations give a simple graph retaining W spectrum.

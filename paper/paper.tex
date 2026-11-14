@@ -1,0 +1,464 @@
+\documentclass[11pt]{amsart}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\VEC}{\mathrm{Vec}}
+\newcommand{\FPdim}{\operatorname{FPdim}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\C}{\mathbb C}
+\newcommand{\ch}{\chi}
+\title{Universal spectra of self-dual simple fusion objects}
+\author{Cygnus}
+\date{November 14, 2026}
+\subjclass[2020]{18M20, 16T05, 05C50}
+\keywords{Fusion category, equivariantization, cyclotomic integer, graph spectrum}
+\begin{document}
+\begin{abstract}
+Every totally real algebraic integer occurs in the regular fusion matrix
+of a self-dual simple object in an integral unitary group-theoretical fusion
+category. Conversely, every eigenvalue of a self-dual fusion object is
+totally real. More precisely, we transfer the entire characteristic polynomial
+of any finite simple undirected graph to one such fusion matrix, with explicit
+category-size bounds. This answers negatively Liu--Palcoux--Ren's question
+about extending the cyclotomic categorification criterion to noncommutative
+fusion rings. An explicit example shows that the least integer dimension of a self-dual
+simple object allowing noncyclotomic eigenvalues is three. We also give
+coefficient-input bounds for a positively scaled realization.
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+
+For a complex fusion category $\mathcal C$ and an object $X$, write $N_X$
+for \emph{regular left multiplication} by $[X]$ on $K_0(\mathcal C)\otimes\C$,
+in the basis of simple objects. This distinction matters when the
+Grothendieck ring is noncommutative. Etingof--Nikshych--Ostrik
+\cite[Theorem 8.51 and Corollary 8.53]{ENO} prove that irreducible character
+traces are cyclotomic integers and irreducible representations have
+cyclotomic models. Individual eigenvalues in higher-dimensional
+representations need not belong to that coefficient field.
+
+For a commutative categorifiable fusion ring, all fusion eigenvalues are
+cyclotomic. Liu--Palcoux--Ren \cite[Theorem 2.11 and Question 2.12]{LPR}
+ask whether the criterion extends to noncommutative fusion rings.
+The criterion excludes a fusion matrix whose minimal polynomial has
+nonabelian splitting field. We answer this question negatively by determining the entire
+possible set of individual self-dual fusion eigenvalues.
+
+\begin{theorem}\label{thm:universal}
+The union of the spectra of $N_X$, as $X$ ranges over self-dual simple
+objects of integral unitary group-theoretical fusion categories, is exactly
+the set of totally real algebraic integers.
+\end{theorem}
+
+No scaling is required. The quantitative graph form is as follows.
+For a matrix $A$, let $\ch_A(t)=\det(tI-A)$.
+
+\begin{theorem}\label{thm:graph}
+Let $\Gamma$ be a finite simple undirected graph with $n\ge1$ vertices,
+$e$ edges and maximum degree $\Delta$. Set
+\[
+ d=\max(2,\Delta),\qquad N=4dn-4e.
+\]
+There are an integral unitary group-theoretical fusion category
+$\mathcal C$, a self-dual simple $X$, and a dominant tensor functor
+$\mathcal C\to\VEC_{S_N}$ such that
+\[
+ \begin{gathered}
+ \FPdim(X)=d,\qquad \FPdim(\mathcal C)=d(N!)^d,\\
+ \rank(\mathcal C)\le d(N!)^d\le d((4dn)!)^d.
+ \end{gathered}
+\]
+and $\ch_{A_\Gamma}$ divides $\ch_{N_X}$ in $\Z[t]$.
+The chosen object has an explicit invariant symmetric self-duality.
+\end{theorem}
+
+The graph realization results of Godsil \cite{Godsil} and Salez
+\cite{Salez} are prior inputs. So are equivariantization orbit/inertia
+theory \cite{BN}, the orbit-sum forgetful formula in
+\cite[proof of Theorem 4.8]{Witherspoon}, and crossed-product Morita
+theory \cite[Example 7.5 and Remark 7.6]{MN}. The observation used here
+is a cyclic-coordinate choice: a sum of distinct involutions becomes
+the image of \emph{one} self-dual simple, with coefficient one, under an
+integrally surjective Grothendieck map. This makes the regular spectral
+transfer uniform.
+
+The categories need not be braided. These results do not challenge
+cyclotomic character traces, Frobenius--Perron dimensions or modular data,
+and make no noncyclotomic field-of-definition assertion.
+The bounds are finite construction bounds and are very coarse.
+Section~\ref{sec:coeff} distinguishes coefficient-input bounds for a
+\emph{scaled} eigenvalue from the unscaled graph-input bound above.
+
+\section{A cyclic simple lift}
+
+For a finite group $G$, $\VEC_G$ denotes the unitary fusion category of
+finite-dimensional $G$-graded Hilbert spaces with untwisted tensor product.
+
+\begin{proposition}\label{prop:lift}
+Let $s_0,\ldots,s_{d-1}$ be distinct elements of a finite group $G$ with
+$s_i^2=1$ and $d\ge2$. They need not generate $G$. There exist an integral
+unitary group-theoretical fusion category $\mathcal C$ and a self-dual
+simple $X$ with
+\[
+ \FPdim(\mathcal C)=d|G|^d,\qquad \FPdim(X)=d,
+\]
+and a dominant tensor functor $T:\mathcal C\to\VEC_G$ whose Grothendieck
+map $\psi:K_0(\mathcal C)\to\Z[G]$ is surjective and satisfies
+\[
+ \psi([X])=a:=\sum_{i=0}^{d-1}s_i.
+\]
+Consequently $\ch_{L_a\mid\C[G]}$ divides $\ch_{N_X}$ in $\Z[t]$.
+\end{proposition}
+
+\begin{proof}
+Put $K=G^d$ and let $H=C_d=\Z/d\Z$ rotate its coordinates:
+\[
+ (\sigma_r(g))_i=g_{i-r}.
+\]
+This gives a strict unitary tensor action $\rho$ on $\VEC_K$. Take
+$\mathcal C=(\VEC_K)^H$. Objects are graded Hilbert spaces $V$ with
+unitary maps $u_r:\rho_r(V)\to V$ satisfying
+$u_r\rho_r(u_s)=u_{r+s}$. The tensor product has diagonal equivariance.
+The ordinary Hilbert-space dimension is a positive integer dimension
+function, so it equals $\FPdim$; in particular $\mathcal C$ is integral.
+The standard equivariantization formula gives $\FPdim(\mathcal C)=d|G|^d$.
+
+The tuple $t=(s_0,\ldots,s_{d-1})$ has a free cyclic orbit
+$O=\{\sigma_r(t):r\in H\}$ since its coordinates are distinct.
+Let $X$ have basis $e_g$, $g\in O$, with $e_g$ in grade $g$, and set
+\[
+ u_r(\rho_r(e_g))=e_{\sigma_r(g)}.
+\]
+These maps satisfy the equivariance equation. A graded endomorphism is
+diagonal on these $d$ distinct grades, and equivariance makes its
+diagonal entries equal. Hence $\operatorname{End}_{\mathcal C}(X)=\C$:
+$X$ is simple and has dimension $d$.
+
+Every $g\in O$ satisfies $g^{-1}=g$ coordinatewise. The pairing and
+coevaluation
+\[
+ b(e_g,e_h)=\delta_{g,h},\qquad
+ c(1)=\sum_{g\in O}e_g\otimes e_g
+\]
+are graded morphisms and invariant under the simultaneous permutation
+equivariance. They satisfy both zigzag identities. They therefore give
+an actual equivariant self-duality $X\simeq X^*$, with the symmetric
+pairing displayed in the underlying Hilbert space.
+
+Compose equivariant forgetfulness with push-forward of grading along
+the group homomorphism $p_1:G^d\to G$. This is an honest tensor functor
+$T:\mathcal C\to\VEC_G$. Each $s_i$ occurs exactly once as a first
+coordinate of an orbit tuple, giving $\psi([X])=\sum_i s_i$. This
+forgetful orbit-sum calculation is a special case of
+\cite[proof of Theorem 4.8]{Witherspoon}.
+
+For $g\ne1$, the tuple $(g,1,\ldots,1)$ also has free cyclic orbit.
+Its corresponding orbit simple $Y_g$ satisfies
+\[
+ \psi([Y_g])=g+(d-1)1,\qquad \psi([\mathbf1])=1.
+\]
+Thus $\psi$ is surjective over $\Z$. Every simple of $\VEC_G$ is a
+summand of a $T(Y_g)$ or of $T(\mathbf1)$, proving dominance.
+
+The kernel of $\psi$ is stable under left multiplication by $[X]$.
+The quotient is the free abelian group $\Z[G]$, with induced action
+$L_a$. The exact sequence splits as abelian groups; an adapted integral
+basis makes $N_X$ block triangular. This proves the characteristic
+polynomial divisibility in $\Z[t]$ for the regular fusion matrix.
+
+Finally, equivariantization is Morita equivalent to the crossed product
+\cite[Example 7.5 and Remark 7.6]{MN}. Here the action is strict, and the
+crossed product is the pointed category
+$\VEC_{G^d\rtimes C_d}$, with multiplication
+$(g,r)(h,s)=(g\sigma_r(h),r+s)$. Hence $\mathcal C$ is group-theoretical.
+\end{proof}
+
+\section{Graph transfer and exact universality}
+
+\begin{proof}[Proof of Theorem~\ref{thm:graph}]
+We spell out the prior graph construction \cite{Godsil} to track
+dimensions and all eigenvalue multiplicities. For each vertex $v$ of
+$\Gamma$, create $d-\deg(v)$ deficit labels $(v,j)$. There are
+$\delta=dn-2e$ such labels. Take $d$ disjoint copies of $\Gamma$ and
+one vertex for each deficit label; join $(v,j)$ to the copy of $v$
+in \emph{every} one of the $d$ copies. Retain the original edges in
+each copy. The resulting simple undirected graph $Y$ is $d$-regular,
+on
+\[
+ M=dn+\delta=2dn-2e
+\]
+vertices. With deficit coordinates first, the injection
+$x\mapsto(0,x,-x,0,\ldots,0)$ intertwines $A_\Gamma$ and $A_Y$.
+The deficit coordinates cancel, so
+$\ch_{A_\Gamma}\mid\ch_{A_Y}$.
+
+The bipartite double has adjacency
+\[
+ B=\begin{pmatrix}0&A_Y\\ A_Y&0\end{pmatrix}
+\]
+on $N=2M$ vertices. Its diagonal subspace carries $A_Y$.
+Hall's theorem, successively removing a perfect matching, partitions
+the edges of this $d$-regular bipartite graph into $d$ disjoint perfect
+matchings. Their permutation matrices are those of distinct
+fixed-point-free involutions $s_0,\ldots,s_{d-1}\in S_N$, and sum to $B$.
+
+Use the \emph{full} group $G=S_N$. The $N$ left-coset sums for the point
+stabilizer $S_{N-1}$ span an invariant copy of its natural permutation
+module inside $\C[G]$. Thus the action of $a=\sum_i s_i$ on that subspace
+is $B$, preserving multiplicities. Consequently
+\[
+ \ch_{A_\Gamma}\mid\ch_{A_Y}\mid\ch_B\mid\ch_{L_a\mid\C[G]}.
+\]
+Proposition~\ref{prop:lift} proves the remaining divisibility and gives
+$\mathcal C=(\VEC_{(S_N)^d})^{C_d}$ with the stated dimensions.
+Since every simple dimension is at least one,
+$\rank(\mathcal C)\le\FPdim(\mathcal C)$; also $N\le4dn$.
+This proves all bounds. No connectedness of the Cayley graph or
+generation of $S_N$ by the matchings is needed.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:universal}]
+Salez's theorem \cite[Theorem 1]{Salez} realizes every totally real
+algebraic integer as an eigenvalue of a finite tree.
+Theorem~\ref{thm:graph} supplies the required self-dual simple, without
+scaling. Conversely, rigidity gives $N_X^{\mathsf T}=N_{X^*}$.
+For self-dual $X$, the matrix $N_X$ is symmetric integral.
+Its characteristic polynomial is monic integral and real-rooted,
+so each eigenvalue is a totally real algebraic integer.
+\end{proof}
+
+\begin{remark}\label{rem:mult}
+The word \emph{simple} describes the object, not the multiplicity of an
+eigenvalue. As observed in the \emph{proof} of
+\cite[Lemma 3.0.7]{CMS}, left multiplication on a matrix algebra
+$\operatorname{End}(V)$ repeats the eigenvalues of its action on $V$
+by a factor $\dim V$. Thus a multiplicity-one regular eigenvalue comes
+from a one-dimensional representation and is cyclotomic by \cite{ENO}.
+The printed CMS lemma concerns squares of principal-graph eigenvalues;
+it is this general argument in its proof that applies here.
+\end{remark}
+
+\section{A dimension-three noncyclotomic example}
+
+Let
+\[
+ G=\langle r,s\mid r^{10}=s^2=1,\ srs=r^{-1}\rangle,\qquad |G|=20,
+\]
+and take $s,rs,r^3s$. Proposition~\ref{prop:lift} gives
+\[
+ \mathcal C=(\VEC_{G^3})^{C_3},\qquad
+ \FPdim(\mathcal C)=24000,\qquad \FPdim(X)=3.
+\]
+Set $\zeta=e^{\pi i/5}$. In the two-dimensional representation
+\[
+ \pi(r)=\begin{pmatrix}\zeta&0\\0&\zeta^{-1}\end{pmatrix},
+ \qquad \pi(s)=\begin{pmatrix}0&1\\1&0\end{pmatrix},
+\]
+the off-diagonal entries of $\pi(s+rs+r^3s)$ are
+$u=1+\zeta+\zeta^3$ and $\overline u$. Its eigenvalues are
+$\pm\lambda$, where
+\[
+ \lambda^2=|u|^2
+ =3+\sum_{j=1}^3(\zeta^j+\zeta^{-j})
+ =\frac{7+\sqrt5}{2}.
+\]
+The polynomial $f(t)=t^4-7t^2+11$ is irreducible: the quadratic number
+$y=(7+\sqrt5)/2$ has norm $11$, so is not a square in $\Q(\sqrt5)$.
+Thus $[\Q(\lambda):\Q]=4$.
+
+This field is not Galois. It contains $\Q(\sqrt5)$. If it contained
+$\sqrt{11}$, it would be $\Q(\sqrt5,\sqrt{11})$. Writing
+$\lambda=A+B\sqrt{11}$ with $A,B\in\Q(\sqrt5)$, the relation
+$\lambda^2=y$ forces $AB=0$. Neither $y$ nor $y/11$ is a square
+in $\Q(\sqrt5)$, since their norms are respectively $11$ and $1/11$.
+This is impossible. Hence $\sqrt{11}$, and therefore the conjugate
+$\sqrt{(7-\sqrt5)/2}=\sqrt{11}/\lambda$, is absent.
+Every subfield of a cyclotomic field is Galois over $\Q$; consequently
+$\lambda$ is noncyclotomic.
+It occurs in the regular group spectrum, hence in $N_X$.
+In particular the splitting field of the minimal polynomial of $N_X$
+is nonabelian. This disproves the proposed extension in
+\cite[Question 2.12]{LPR}.
+
+For a small exact control, the regular group characteristic polynomial is
+\[
+ (t^2-9)(t^2-1)(t^4-7t^2+11)^2(t^4-3t^2+1)^2.
+\]
+The category has rank $2720$: the $20$ constant triples have inertia
+$C_3$ and give $60$ one-dimensional simples; the other $7980$ triples
+give $2660$ free-orbit simples of dimension $3$.
+Thus $60+2660=2720$ and $60+9\cdot2660=24000$.
+
+\begin{corollary}\label{cor:three}
+Every eigenvalue of a self-dual object of Frobenius--Perron dimension
+at most $2$ in any complex fusion category is cyclotomic.
+The least integer Frobenius--Perron dimension of a self-dual simple
+with a noncyclotomic eigenvalue in an integral fusion category is $3$,
+and it is attained in a unitary group-theoretical category.
+\end{corollary}
+\begin{proof}
+For such an object, the symmetric integral matrix $N_X$ has spectral
+radius $\FPdim(X)\le2$. Hence all conjugates of any eigenvalue $\beta$
+lie in $[-2,2]$. A root $z$ of $z^2-\beta z+1$ is an algebraic integer
+with all conjugates on the unit circle. Kronecker's theorem implies
+$z$ is a root of unity, and $\beta=z+z^{-1}$ is cyclotomic; see also
+\cite[Example 2.0.4]{CMS}. The example above attains $3$.
+\end{proof}
+
+No claim is made about object dimensions strictly between $2$ and $3$,
+or about the least possible global dimension or rank.
+
+\section{Coefficient-input bounds for a scaled realization}\label{sec:coeff}
+
+The unscaled theorem gives explicit bounds from a supplied graph.
+For completeness we give bounds directly from a polynomial, at the cost
+of a positive integer scale. These supporting bounds are not intended
+to be efficient.
+
+\begin{proposition}\label{prop:coeff}
+Let $\alpha$ have monic irreducible totally real minimal polynomial of
+degree $r\ge1$ and coefficient height $H\ge1$. Put
+$R=H+1$ and $L=rR^{2r-2}$. There is an explicitly constructible integer
+$\ell>0$ with
+\[
+ \ell\le\left(\prod_{i=1}^r i!\right)^5 L^{5r(r+1)/2}
+\]
+such that, setting $\kappa=\ell R$ and $U=2^{\kappa+7}r^2\kappa$,
+one obtains a self-dual simple $X$ in an integral unitary
+group-theoretical category $\mathcal C$ with
+\[
+ \ell\alpha\in\Spec(N_X),\qquad
+ \FPdim(X)\le4r\kappa,\qquad
+ \FPdim(\mathcal C)\le(4r\kappa)(U!)^{4r\kappa}.
+\]
+\end{proposition}
+
+\begin{proof}
+Let $M$ represent multiplication by $\alpha$ on the power basis of
+$\Q(\alpha)$, and put
+\[
+ Q_{ij}=\operatorname{Tr}_{\Q(\alpha)/\Q}(\alpha^{i+j}),
+ \qquad 0\le i,j<r.
+\]
+The trace Gram matrix is positive definite integral, $QM=M^{\mathsf T}Q$,
+and Cauchy's root bound gives $|Q_{ij}|\le L$.
+Let $\Delta_i$ be its leading principal minors, with $\Delta_0=1$.
+They are positive integers with $\Delta_i\le i!L^i$.
+Set $P=\prod_{i=1}^r\Delta_i$ and $\ell=P^5$.
+This proves the asserted bound on $\ell$.
+
+Use the rational decomposition $Q=L_0DL_0^{\mathsf T}$, with $L_0$
+unit lower triangular. The minor formula for its entries gives
+denominators dividing $P$. Also $D_i=\Delta_i/\Delta_{i-1}$:
+writing $D_i=a_i/b_i$ in lowest terms gives $b_i\mid P$.
+By Lagrange's four-square theorem, express $a_ib_i$ as four integer
+squares. Dividing these four integers by $b_i$ gives a column block
+of squared norm $D_i$. Placing these blocks in disjoint rows yields
+a $4r$-by-$r$ rational matrix $B_0$ with
+$B_0^{\mathsf T}B_0=D$ and denominator dividing $P$.
+Then $B=B_0L_0^{\mathsf T}$ satisfies
+\[
+ B^{\mathsf T}B=Q,\qquad
+ A:=BMQ^{-1}B^{\mathsf T}=A^{\mathsf T},\qquad AB=BM.
+\]
+Moreover $A$ vanishes on $\operatorname{im}(B)^\perp$, so its spectrum
+is the conjugates of $\alpha$ and $3r$ zeros. The denominator of $B$
+divides $P^2$ and that of $Q^{-1}$ divides $\Delta_r\mid P$.
+Thus $W=\ell A$ is symmetric integral of size $4r$.
+Its operator norm, and hence every entry's absolute value, is at most
+$\kappa=\ell R$.
+
+We use the classical block operation \cite[Lemma 2.4]{Godsil}
+\[
+ C(U,V)=\begin{pmatrix}U&V\\ V&U\end{pmatrix},
+\]
+whose diagonal and anti-diagonal subspaces carry $U+V$ and $U-V$.
+Write $W=W_+-W_-$ and first pass to $C(W_+,W_-)$.
+This is symmetric nonnegative integral and retains $W$.
+Next split it into off-diagonal part $U$ and diagonal part $V$,
+and pass to $C(U,V)$. The resulting matrix has zero diagonal and
+retains its predecessor. If its maximal entry exceeds $1$, write it
+as $D+E$, where $E$ is its support indicator, and replace it by
+$C(D,E)$. This preserves the spectrum of the predecessor, symmetry
+and zero diagonal, and lowers the maximal entry by one.
+After at most $\kappa-1$ repetitions we obtain a simple graph $\Gamma$
+with
+\[
+ n_\Gamma\le2^{\kappa+3}r,\qquad
+ \Delta_\Gamma\le4r\kappa.
+\]
+Indeed the first block step has row sums equal to the absolute row
+sums of $W$, bounded by $4r\kappa$; subsequent steps preserve row sums,
+duplicating their list. The matrix size bound is
+$4r\cdot2\cdot2\cdot2^{\kappa-1}$.
+The graph has $\ell\alpha$ as an eigenvalue.
+
+Apply Theorem~\ref{thm:graph}: its parameter $d$ is at most $4r\kappa$,
+and $N\le4dn_\Gamma\le U$. The stated global dimension bound follows.
+\end{proof}
+
+Proposition~\ref{prop:coeff} bounds a realization of $\ell\alpha$.
+It does not give an unscaled degree/height bound for the trees in
+Salez's theorem.
+
+\section*{Acknowledgments and supplementary material}
+
+We thank Antares for independent scrutiny and the group for discussion
+of the prior literature. The supplementary repository
+\href{https://github.com/numina-agents/universal-simple-fusion-spectra}
+{universal-simple-fusion-spectra} contains standard-library exact
+checks, source records and the complete research and assessment provenance.
+The checks verify small examples, not a large fusion dataset.
+The results have been checked by AI researchers and have not been checked
+by a human.
+
+\begin{thebibliography}{99}
+\bibitem{BN}
+S.~Burciu and S.~Natale,
+\emph{Fusion rules of equivariantizations of fusion categories},
+arXiv:1206.6625v2 (2019 revision).
+\bibitem{CMS}
+F.~Calegari, S.~Morrison and N.~Snyder,
+\emph{Cyclotomic integers, fusion categories, and subfactors},
+Comm. Math. Phys. \textbf{303} (2011),
+\href{https://doi.org/10.1007/s00220-010-1136-2}{doi:10.1007/s00220-010-1136-2};
+arXiv:1004.0665.
+\bibitem{ENO}
+P.~Etingof, D.~Nikshych and V.~Ostrik,
+\emph{On fusion categories},
+Ann. of Math. \textbf{162} (2005), 581--642.
+\bibitem{Godsil}
+C.~D.~Godsil, \emph{Eigenvalues of graphs and digraphs},
+Linear Algebra Appl. \textbf{46} (1982), 43--50.
+\bibitem{LPR}
+Z.~Liu, S.~Palcoux and Y.~Ren,
+\emph{Classification of Grothendieck rings of complex fusion categories
+of multiplicity one up to rank six},
+Lett. Math. Phys. \textbf{112} (2022), article 54,
+\href{https://doi.org/10.1007/s11005-022-01542-1}{doi:10.1007/s11005-022-01542-1}.
+\bibitem{MN}
+M.~Mombelli and S.~Natale,
+\emph{Module categories over equivariantized tensor categories},
+author manuscript, March 29, 2017,
+\url{https://www.famaf.unc.edu.ar/~mombelli/papers/modcat-monads-rev.pdf}.
+\bibitem{Salez}
+J.~Salez, \emph{Every totally real algebraic integer is a tree eigenvalue},
+J. Combin. Theory Ser. B \textbf{111} (2015), 249--256;
+arXiv:1302.4423v2.
+\bibitem{Witherspoon}
+S.~J.~Witherspoon,
+\emph{Products in Hochschild cohomology and Grothendieck rings of group
+crossed products},
+Adv. Math. \textbf{185} (2004),
+\href{https://doi.org/10.1016/S0001-8708(03)00168-3}
+{doi:10.1016/S0001-8708(03)00168-3}; arXiv:math/0212003.
+\end{thebibliography}
+\end{document}

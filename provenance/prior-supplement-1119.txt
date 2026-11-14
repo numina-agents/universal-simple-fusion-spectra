@@ -1,0 +1,118 @@
+ANTARES — PRIOR AUDIT SUPPLEMENT, 14 NOV 2026 11:19 UTC
+This supplements, and does not replace or modify, the frozen prior-audit.txt
+uploaded in message 4979. No complete construction packet has yet been supplied.
+No correctness verdict on Cygnus's construction is issued.
+
+Kashina–Sommerhäuser–Zhu, On Higher Frobenius-Schur Indicators,
+arXiv:math/0311199v2 (2005); Memoirs AMS 181(855) (2006),
+DOI 10.1090/memo/0855.
+Primary sources:
+https://arxiv.org/abs/math/0311199
+https://www.math.mun.ca/~sommerh/Publications/FrobSchurwww/FrobSchur.html
+
+Complete author HTML introduction read. Complete section 7, including proofs,
+read in downloaded text. Complete final theorem/proof of section 6.3 read,
+and only the latter part of the preceding restriction proposition proof.
+Proposition 6.2 and all cited dependencies were NOT independently audited.
+Section 7's permutation/GAP calculations were NOT rerun.
+
+For semisimple finite-dimensional H over an algebraically closed field of
+characteristic zero, section 6.3 proves that the center of the rational
+character ring is a product of number fields contained in Q(zeta_exp(H)).
+This is about the CENTER, not arbitrary multiplication eigenvalues.
+Section 7 already uses K^G smash K[F] for a finite group F acting on G.
+Its examples concern indicators and Sweedler powers; no universal single-simple
+fusion-spectrum theorem was located in the sections read. Posted as useful
+literature note 4991. This does not change the bounded prior/significance
+judgment of 4979.
+
+Source PDF local pin:
+5c31525dc4fadbfce00b4b7d0a8cc2e5e65b09856d00bf727cf8ad05bcee2c29
+literature/kashina-sommerhauser-zhu-indicators-2005.pdf
+
+Additional targeted searches since the frozen audit (both web providers):
+  "Hopf algebra" "character ring" "eigenvalues" "cyclotomic"
+  "Hopf algebras" "noncyclotomic" eigenvalues
+  "character algebra" "non-cyclotomic"
+  "fusion matrix" "totally real algebraic integer"
+  "group-theoretical" "Hecke algebra" "Grothendieck"
+  "fusion category" "Hecke algebra" "quotient"
+  "fusion categories" "double coset" spectrum
+  "Grothendieck ring" "Hecke algebra"
+No covering whole theorem located. This is a bounded search statement only.
+
+Herman–Singh, Extending table algebras to Hopf algebras (2019),
+DOI 10.24330/ieja.586882: ONLY primary abstract and start of introduction read.
+https://www.ieja.net/files/papers/volume-26/2-V26-2019.pdf
+Its coalgebra structure on an underlying algebra does not assert that a given
+table basis becomes the irreducible-representation basis. It is not a
+categorification theorem of the required scope in the passages read.
+
+Phoebe's Nikshych 2609.27020 literature note 4948 was read in full. It concerns
+Lagrangian orbits for abelian groups, rather than the current spectral target.
+No independent reading/check of that paper is claimed by this supplement.
+
+FOLLOW-UP THROUGH 11:25 UTC
+Witherspoon: complete abstract/introduction now also read. No change to the
+section 4 prior finding. Direct public Academia download attempt for Godsil
+returned HTTP 403; author homepage/Notes index did not yield the original scan.
+Original proof/transcription reading boundary remains unchanged.
+
+Lim, arXiv:2601.13490v2, Noncommutative Minkowski integral inequality and a
+unitary categorification criterion for fusion rings. Primary HTML:
+https://arxiv.org/html/2601.13490v2
+Introduction, complete Theorem 3.2/Corollary 3.4 proofs and surrounding setup,
+and section 3.2 discussion/examples read. NOT the entire Theorem 2.10 proof
+or earlier dependencies; no exclusion computation rerun. Corollary 3.4 is a
+noncommutative positivity inequality, not an eigenvalue universality or
+cyclotomic-spectrum theorem. Useful scope note 4997. Its comparison with LPR
+does not itself extend the latter's cyclotomic criterion.
+
+Liu–Zhou, Eigenvalues of Cayley Graphs, EJC 29(2) P2.9 (2022),
+DOI 10.37236/8569. Open published PDF:
+https://www.combinatorics.org/ojs/index.php/eljc/article/download/v29i2p9/pdf
+ONLY section 12.1 Theorems 292–296 and surrounding discussion read for the
+realization claims; not the whole 164-page survey. This reports, without
+proofs, Godsil's exact minimal-polynomial transfer and Babai's stronger
+arc-transitive/2-arc-transitive transfer. Babai's original proof still UNREAD.
+No categorical conclusion found in that passage. Useful note 4998.
+
+Additional exact queries, not systematic searches (both providers where
+indicated; remaining queries first provider):
+  Godsil 1982 "Eigenvalues of graphs and digraphs" pdf [both]
+  "extended cyclotomic" "noncommutative" 2025 2026 [both]
+  "fusion" "eigenvalues" "cyclotomic" Hopf Kashina Sommerhauser Zhu
+  site.math.uwaterloo.ca Godsil "digraphs" 1982 pdf
+  "Eigenvalues of graphs and digraphs" filetype:pdf -site:citeseerx.ist.psu.edu
+  "fusion category" "spectral" "universality" noncommutative
+  "fusion category" "spectral universality" [both providers, close variants]
+  "Noncommutative Minkowski integral inequality" fusion rings arxiv
+  "Godsil" "1982" site:math.uwaterloo.ca/~cgodsil/pdfs/
+  "fusion matrix" "non-cyclotomic" Hopf
+  "Hopf algebra" "every algebraic integer" [both]
+  "fusion ring" "symmetric integral matrix" [both]
+  "fusion category" "arbitrary eigenvalues" [both]
+  "character ring" "arbitrary eigenvalues" [both]
+  "every graph" "fusion category" [both]
+  "arbitrary graph" "fusion graph" [both]
+  "fusion graph" "algebraic integer" [both]
+  "Hopf algebra" "Cayley graph" eigenvalues [both]
+  "extended cyclotomic criterion" -site:mathoverflow.net -site:anyonwiki.github.io
+  "cyclotomic" "noncommutative Grothendieck"
+  "fusion rings" "splitting field" "eigenvalues"
+  "every character" "restriction of an irreducible character" [both]
+  "any representation" "restriction of an irreducible" finite group [both]
+  "simple object" "prescribed" "tensor functor" equivariantization
+  "fusion categories" "simple lifting"
+  "finite group" "arbitrary representation" "overgroup"
+  "character" "irreducible" "overgroup" restriction theorem
+  "fusion" "simple object" "image" "wreath product"
+  "Hopf" "irreducible" "wreath product"
+  "algebraic integer" "finite quantum group" eigenvalue [both]
+  "algebraic integers" "fusion" "realization" [both]
+  "fusion category" "spectral realization" [both]
+  "Hopf" "spectrum" "universal" "character"
+No covering whole universal single-simple categorical theorem located. Search
+results irrelevant to the endpoint were not adopted as mathematical evidence.
+The classical-restriction and wreath-product queries did not establish any
+new prior theorem; no such theorem is asserted on the strength of snippets.

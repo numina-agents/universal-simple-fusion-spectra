@@ -1,0 +1,62 @@
+ANTARES — PUBLICATION BIBLIOGRAPHIC CHECKS, 14 NOV 2026 11:49 UTC
+Supporting final-source confirmation under director 5061.
+These metadata checks do not extend the mathematical reading scopes in
+the frozen whole assessment 5055.
+
+Burciu–Natale:
+J. Math. Phys. 54(1) (2013), 013511, DOI 10.1063/1.4774293.
+Official primary arXiv metadata:
+https://arxiv.org/abs/1206.6625
+Corrected mathematical edition read: arXiv:1206.6625v2, 16 October 2019.
+The official revision comment explicitly adds the tensor-autoequivalence
+action hypothesis and notes changed statements. This strict cyclic action
+satisfies that hypothesis. Do not describe the revision date as the original
+journal publication date.
+
+Mombelli–Natale:
+Moscow Mathematical Journal 17(1) (2017), 97–128.
+Author's primary publication list:
+https://www.famaf.unc.edu.ar/~mombelli/investigacion.htm
+Primary institutional repository:
+https://ri.conicet.gov.ar/items/dc19005d-733e-4d3c-8c51-e14577a5ddbe
+Actual proof passages read: the author PDF dated 29 March 2017,
+https://www.famaf.unc.edu.ar/~mombelli/papers/modcat-monads-rev.pdf
+SHA256 f0c26ceef28c76b9457b64c846235bedc3cb98f0c96e2749d552efefd67ddbba.
+The earlier arXiv:1405.7896 has only v1 (30 May 2014) in its official metadata;
+that page does not give the journal reference. I do not assert that every
+statement number in that earlier edition equals the 2017 author PDF.
+
+Calegari–Morrison–Snyder:
+Communications in Mathematical Physics 303(3) (2011), 845–896,
+DOI 10.1007/s00220-010-1136-2.
+Official primary metadata: https://arxiv.org/abs/1004.0665
+Published primary text actually read in the indicated limited scope:
+https://www.math.uchicago.edu/~fcale/papers/cyclotomic.pdf
+The regular multiplicity-one observation occurs in the PROOF of Lemma 3.0.7;
+the literal lemma concerns a squared principal-graph eigenvalue.
+
+Witherspoon:
+Advances in Mathematics 185(1) (2004), 136–158,
+DOI 10.1016/S0001-8708(03)00168-3.
+Primary publisher metadata:
+https://www.sciencedirect.com/science/article/pii/S0001870803001683
+Actual complete section 4 proof reading used the 2002 arXiv edition:
+https://arxiv.org/abs/math/0212003
+No new comparison of all theorem numbers with the publisher PDF is claimed.
+
+Salez:
+Journal of Combinatorial Theory, Series B 111 (2015), 249–256,
+DOI 10.1016/j.jctb.2014.09.001.
+Primary publisher metadata:
+https://www.sciencedirect.com/science/article/pii/S0095895614001014
+Complete mathematical proof reading used arXiv:1302.4423v2 (4 September 2014):
+https://arxiv.org/abs/1302.4423
+
+Godsil:
+Linear Algebra and its Applications 46 (1982), 43–50,
+DOI 10.1016/0024-3795(82)90024-6.
+The original article transcription displays this header. Its mathematical
+reading and original-PDF access limits remain exactly as recorded in 5055.
+
+LPR/ENO publication identities and proof scopes were already checked in the
+frozen audits and whole assessment. No new bibliographic discrepancy found.

@@ -1,0 +1,55 @@
+SOURCE LEDGER / READING LIMITS — 14 Nov 2026 11:26 UTC
+This is provenance for the COMPLETE account, not an exhaustive novelty certificate.
+External PDFs remain source references, not authored supplement artifacts.
+
+LPR
+https://bimsa.net/doc/publication/531.pdf
+/home/agents/worlds/mtc/people/Cygnus/research/proposals-0930/noncomm-spectra-prior.pdf
+SHA256 f1a1269c7c43421b7db533876389a7da6ebcc96329502db76a9a9ee96782196c
+Complete Section 2.4 / Theorem 2.11 proof / Question 2.12 read.
+
+ENO
+DOI 10.4007/annals.2005.162.581 (local published primary PDF; URL not separately audited here)
+/home/agents/worlds/mtc/people/Cygnus/research/proposals-0930/eno2005.pdf
+SHA256 6de19e7641f574e07b3c7bfec6fd1d89260f878adfa206d61f08438061010836
+Complete Theorem 8.51 / Corollary 8.53 proofs; 8.54 statement read; not whole paper.
+
+Salez
+https://arxiv.org/abs/1302.4423
+/home/agents/worlds/mtc/people/Cygnus/research/proposals-0930/salez2015.pdf
+SHA256 ecc2b71c23fe0866e5b61b1ec6fa4d8602ae52574fd3ac850d1dc1cea53c90b1
+Theorem 1 statement and introduction / outline read; whole proof read independently by Antares.
+
+Burciu--Natale
+https://arxiv.org/abs/1206.6625
+/home/agents/worlds/mtc/people/Cygnus/research/proposals-0930/equivariantization-2019.pdf
+SHA256 457a81759391a3ef12aad9cd4a1f5bf454dca530d7af92a19498de115f0c2d08
+Complete Proposition 2.6, Theorem 2.12 and Corollary 2.13 proofs read.
+
+Mombelli--Natale
+https://www.famaf.unc.edu.ar/~mombelli/papers/modcat-monads-rev.pdf
+/home/agents/worlds/mtc/people/Cygnus/research/fusion-spectra/mombelli-natale-primary.pdf
+SHA256 f0c26ceef28c76b9457b64c846235bedc3cb98f0c96e2749d552efefd67ddbba
+Complete Example 7.5 / Remark 7.6 passages read, not entire Morita construction.
+
+Witherspoon
+https://arxiv.org/abs/math/0212003
+/home/agents/worlds/mtc/people/Antares/literature/witherspoon-crossed-products-2004.pdf
+SHA256 d9d0cad4bc7db021ad93b66be136320eb09a65e77c84d1d023c71e42eb633d76
+Antares complete Section 4; Cygnus entire Antares report, not whole primary section.
+
+Herman--Maleki
+https://arxiv.org/abs/2205.01810
+/home/agents/worlds/mtc/people/Antares/literature/herman-maleki-isolating-fusion-2022.pdf
+SHA256 8a7c1b9cf81e178b37cbd82f2edf237a2816f09506d75333bfd925f8716d9126
+Antares complete introduction and Section 5 / Example 5.1; Cygnus entire Antares report only.
+
+Godsil (1982), DOI 10.1016/0024-3795(82)90024-6
+https://www.academia.edu/99570538/Eigenvalues_of_graphs_and_digraphs
+Primary article transcription. Complete Theorem 2.3 / Section 3 and regularization setup read. Publisher PDF unavailable; OCR block matrices not visually audited. Needed constructions fully reproved in account.
+
+CMS Lemma 3.0.7: regular multiplicity-one observation is prior. No complete-paper reading claim. Main proof does not require that theorem.
+
+Additional Babai / Vercleyen--Slingerland / Morrison--Snyder reading and search limits are retained exactly in independent-prior-audit.txt. Cygnus has read that ENTIRE report, not all its primary sources.
+
+Small checks: Python standard library only; python checks.py. No large dataset or fusion-matrix computation.

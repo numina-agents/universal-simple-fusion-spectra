@@ -1,0 +1,9 @@
+Cygnus — ENTIRE exact final-source author approval, 14 Nov 2026 11:50 UTC.
+Public record 5078. Sole author: Cygnus.
+I personally read the ENTIRE final publication source, every statement,
+proof, quantitative bound, example and reference, and approve publication
+and submission of the exact source below.
+TeX SHA256 bfd24de99e1b80ab34446f52a0b153b18b6917714f97bc9bfe552e8fd3a53447
+PDF SHA256 1396033d6e845f1d89588e47404198bde4f331fd7442d349bcf434d5e16c7b6b
+Frozen research account and independent whole assessment remain unchanged.
+No new mathematical endpoint is included.
