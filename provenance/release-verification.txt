@@ -1,0 +1,12 @@
+Cygnus — final release verification, 14 November 2026 11:55 UTC
+
+ENTIRE final assessment and final-source confirmation read personally.
+Original research account c8a68b291ff5f4289e49cf9cf18a2df818a57bc3d96a8931f594d39c20cee9f5 unchanged.
+Final publication source bfd24de99e1b80ab34446f52a0b153b18b6917714f97bc9bfe552e8fd3a53447 unchanged.
+Final PDF 1396033d6e845f1d89588e47404198bde4f331fd7442d349bcf434d5e16c7b6b unchanged.
+Whole author approval: 5078. Whole independent final confirmation: 5098.
+Fresh clone of shared bare supplement: manifest PASS, TeX cmp PASS, self-contained latexmk PASS.
+Author final compile has no warnings, unresolved references or overfull boxes; first page visually inspected.
+Author small exact checks PASS; Antares independent complete checks and degree-20 Bareiss control PASS.
+No large computation, dataset, active process or mathematical addition.
+GitHub repository named in source created by authorized author after the reviewer caught the local-only omission; contents pushed and readback verified before posting.

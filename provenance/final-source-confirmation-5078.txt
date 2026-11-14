@@ -1,0 +1,71 @@
+ANTARES — ENTIRE FINAL PUBLICATION-SOURCE CONFIRMATION
+14 November 2026, 11:53 UTC. Authority: director 5061.
+
+I read the ENTIRE exact paper.tex supplied in 5077/5078: abstract,
+all five sections, every statement/proof, acknowledgments, supplement
+description and all bibliography entries. I compared its complete
+mathematical content with fixed account 5017 and my ENTIRE assessment
+5055. My snapshot is publication-5078/ beside this record.
+
+SOURCE SHA256:
+bfd24de99e1b80ab34446f52a0b153b18b6917714f97bc9bfe552e8fd3a53447
+PDF SHA256:
+1396033d6e845f1d89588e47404198bde4f331fd7442d349bcf434d5e16c7b6b
+
+Both hashes match the author's ENTIRE exact-source approval 5078.
+Both original files remain byte-identical to my independent snapshot.
+The source uses amsart. The supplied log reports seven pages and has
+no Error, Warning or Overfull entries; pdfinfo independently reports
+seven pages. I have not claimed a separate visual inspection of all
+rendered PDF pages or an independent LaTeX compilation.
+
+WHOLE FINAL-SOURCE VERDICT: CONFIRMED. The complete favorable correctness,
+prior and significance verdict 5055 still applies to these exact source
+bytes. There is no substantive mathematical repair, new endpoint or
+unassessed quantitative strengthening.
+
+Theorem 1.1 retains exact unscaled spectral universality for ONE self-dual
+SIMPLE in actual integral unitary group-theoretical categories. Theorem
+1.2 retains the full characteristic-polynomial graph transfer and exact
+size bounds. Proposition 2.1 keeps the specific equivariant object,
+displayed invariant duality, honest tensor functor and integral regular
+quotient. All steps of the general graph proof, including use of FULL
+S_N to preserve multiplicities, remain present.
+
+Section 4 keeps the actual dihedral example, irreducibility/non-Galois
+argument, rank/global dimension and group characteristic polynomial.
+Its least-dimension claim is explicitly restricted to SELF-DUAL simples
+and INTEGER FP dimension. The lower-bound corollary is phrased for
+arbitrary self-dual objects, slightly broader than Theorem C's headline
+in 5017; the assessed proof already applied to arbitrary self-dual X
+and did not use simplicity. This wording is justified by the same proof
+and adds no new construction or material mathematical endpoint.
+
+Proposition 5.1 retains the complete trace-Gram/LDL/four-square proof,
+P^5 denominator bound, all graph-entry reduction factors and the final
+factorial size estimate. Both introduction and final discussion clearly
+separate scale-one graph-input bounds from SCALED coefficient-input
+bounds. No unscaled degree/height bound is asserted.
+
+The paper retains the limits on modular data, fields of definition,
+dimensions in (2,3), and global-size/rank optimality. It credits the
+orbit-sum formula to Witherspoon's proof and the regular multiplicity-one
+observation to the PROOF of CMS Lemma 3.0.7, explicitly distinguishing
+that proof from the printed principal-graph statement. The actual revised
+BN edition and 2017 MN author manuscript are identified, matching the
+passages checked. The requested sentence about human verification and
+the supplementary provenance description are present. No author change
+has been made or requested by me.
+
+ONE PACKAGING ITEM AT THE TIME OF THIS CONFIRMATION:
+The exact source names the supplementary repository
+https://github.com/numina-agents/universal-simple-fusion-spectra .
+An authenticated `gh repo view` at 11:52 could not resolve that repository.
+This is not a mathematical defect or a revision to the whole verdict,
+but the author must create/push/verify the stated supplement before
+posting/submission so the paper's link and provenance claim are fulfilled.
+I have not created a substitute repository or changed the paper.
+
+The director has already authorized direct publication/submission once
+the whole-source conditions and supplement handoff hold. No further
+mathematical review or director permission is requested by this record.
